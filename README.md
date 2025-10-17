@@ -1,7 +1,7 @@
 # Customer Classification Using Machine Learning
 
 ## 🧠 Project Overview
-This project focuses on building predictive models to classify customers based on their **shopping behavior and purchase frequency**. Using real-world retail data from **Kenyan shopping trends**, the aim is to help businesses like Amazon or local e-commerce platforms understand and segment their customers for **personalized marketing, targeted promotions, and improved retention**.
+This project focuses on building predictive models to classify customers based on their **shopping behavior and purchase frequency**. Using real-world retail data from **Kenyan shopping trends**, the aim is to help businesses like local e-commerce platforms understand and segment their customers for **personalized marketing, targeted promotions, and improved retention**.
 
 The models used — **Linear Discriminant Analysis (LDA)** and **Random Forest (RF)** — were compared to determine which provides higher classification accuracy and generalization capability.
 
@@ -28,7 +28,7 @@ The dataset used is `shopping_trends_kenya_data.csv`, containing **3,900 custome
 ### 1. **Data Preprocessing**
 - Removed irrelevant columns like `Customer ID` to avoid data leakage.
 - Encoded categorical variables into numeric format using **Label Encoding**.
-- Split data into **training (80%)** and **testing (20%)** sets.
+- Split data into **training (70%)** and **testing (30%)** sets.
 - Normalized numeric features for consistent model behavior.
 
 ---
@@ -44,10 +44,10 @@ LDA was selected as a **baseline classifier** because it assumes features follow
 **Performance Summary:**
 | Metric | Score |
 |:-------|:------|
-| Accuracy | ~0.74 |
-| Precision | ~0.70 |
+| Accuracy | ~0.73 |
+| Precision | ~0.77 |
 | Recall | ~0.72 |
-| F1-Score | ~0.71 |
+| F1-Score | ~0.74|
 
 **Interpretation:**  
 LDA performed moderately well, capturing the general trends in customer frequency but struggled with overlapping purchase behavior among classes. It’s efficient for quick insights but limited for complex relationships.
@@ -68,13 +68,13 @@ Random Forest (RF) is an ensemble learning algorithm that builds multiple decisi
 **Performance Summary:**
 | Metric | Score |
 |:-------|:------|
-| Accuracy | ~0.82 |
-| Precision | ~0.85 |
-| Recall | ~0.78 |
-| F1-Score | ~0.81 |
+| Accuracy | ~0.72 |
+| Precision | ~0.76 |
+| Recall | ~0.72 |
+| F1-Score | ~0.73 |
 
 **Interpretation:**  
-The Random Forest outperformed LDA across all metrics, demonstrating strong generalization. It effectively captured hidden patterns like purchase frequency variations tied to **season, gender, and subscription status**.
+The Random Forest demonstrates strong generalization. It effectively captured hidden patterns like purchase frequency variations tied to **season, gender, and subscription status**.
 
 **Feature Importance Example:**
 Top influencing features included:
@@ -111,11 +111,9 @@ Random Forest provided the most reliable classification results, suggesting that
 ---
 
 ## 🖼️ Visualization Gallery
-Insert your model output screenshots here:
 - LDA Confusion Matrix → `images/lda_confusion_matrix.png`
 - RF Confusion Matrix → `images/rf_confusion_matrix.png`
 - RF Feature Importance → `images/rf_feature_importance.png`
-- Accuracy Comparison → `images/model_accuracy_comparison.png`
 
 ---
 
@@ -123,10 +121,5 @@ Insert your model output screenshots here:
 - Extend analysis to include deep learning models (LSTM, CNN) for time-based behavior prediction.  
 - Integrate customer segmentation clustering (K-Means, DBSCAN) for finer granularity.  
 - Deploy the best-performing model as an API for real-time classification in e-commerce systems.
-
----
-
-## 🧩 Author
-Developed by **David**, a Data Analyst and Software Developer passionate about using machine learning to drive business intelligence and customer engagement.
 
 ---
