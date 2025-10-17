@@ -53,7 +53,7 @@ LDA was selected as a **baseline classifier** because it assumes features follow
 LDA performed moderately well, capturing the general trends in customer frequency but struggled with overlapping purchase behavior among classes. It’s efficient for quick insights but limited for complex relationships.
 
 **Screenshot Placeholder:**  
-`![LDA Confusion Matrix](images/lda_confusion_matrix.png.png)`
+![LDA Confusion Matrix](images/lda_confusion_matrix.png.png)
 
 ---
 
@@ -85,8 +85,8 @@ Top influencing features included:
 - `Subscription Status`
 
 **Screenshot Placeholders:**  
-- `![Random Forest Confusion Matrix](images/rf_confusion_matrix.png.png)`  
-- `![Feature Importance Plot](images/rf_feature_importance.png.png)`
+- ![Random Forest Confusion Matrix](images/rf_confusion_matrix.png.png)  
+- ![Feature Importance Plot](images/rf_feature_importance.png.png)
 
 ---
 
@@ -111,9 +111,9 @@ Random Forest provided the most reliable classification results, suggesting that
 ---
 
 ## 🖼️ Visualization Gallery
-- LDA Confusion Matrix → `images/lda_confusion_matrix.png.png`
-- RF Confusion Matrix → `images/rf_confusion_matrix.png.png`
-- RF Feature Importance → `images/rf_feature_importance.png.png`
+- LDA Confusion Matrix → images/lda_confusion_matrix.png.png
+- RF Confusion Matrix → images/rf_confusion_matrix.png.png
+- RF Feature Importance → images/rf_feature_importance.png.png
 
 ---
 
