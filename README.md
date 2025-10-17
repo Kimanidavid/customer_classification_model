@@ -51,8 +51,7 @@ LDA was selected as a **baseline classifier** because it assumes features follow
 
 **Interpretation:**  
 LDA performed moderately well, capturing the general trends in customer frequency but struggled with overlapping purchase behavior among classes. It’s efficient for quick insights but limited for complex relationships.
-
-**Screenshot Placeholder:**  
+ 
 ![LDA Confusion Matrix](images/lda_confusion_matrix.png.png)
 
 ---
@@ -84,7 +83,6 @@ Top influencing features included:
 - `Category`
 - `Subscription Status`
 
-**Screenshot Placeholders:**  
 - ![Random Forest Confusion Matrix](images/rf_confusion_matrix.png.png)  
 - ![Feature Importance Plot](images/rf_feature_importance.png.png)
 
@@ -107,14 +105,6 @@ Random Forest provided the most reliable classification results, suggesting that
 - **Seasonal variations** strongly affect purchase patterns — “Summer” and “Spring” buyers are more active.  
 - **Discounts and promos** significantly boost short-term purchase frequency.  
 - Using the Random Forest model, marketing teams can build **predictive customer segments** and **launch retention campaigns** with higher precision.
-
----
-
-## 🖼️ Visualization Gallery
-- LDA Confusion Matrix → images/lda_confusion_matrix.png.png
-- RF Confusion Matrix → images/rf_confusion_matrix.png.png
-- RF Feature Importance → images/rf_feature_importance.png.png
-
 ---
 
 ## 🚀 Future Work
