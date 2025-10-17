@@ -94,8 +94,8 @@ Top influencing features included:
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |:------|:----------|:----------|:--------|:----------|
-| LDA | 0.74 | 0.70 | 0.72 | 0.71 |
-| Random Forest | 0.82 | 0.85 | 0.78 | 0.81 |
+| LDA | 0.74 | 0.78 | 0.73 | 0.74 |
+| Random Forest | 0.72 | 0.76 | 0.72 | 0.73 |
 
 **Conclusion:**  
 Random Forest provided the most reliable classification results, suggesting that customer purchase frequency is influenced by complex interactions between demographic and behavioral factors.
